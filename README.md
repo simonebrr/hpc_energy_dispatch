@@ -18,3 +18,15 @@ This repository contains the simulation code and experimental material for the P
 ## Setup
 
 Create and activate a Conda environment, using requirements.txt
+
+
+## Estensioni (tesi di laurea, S. Brunelli)
+
+- `rule_based_sims.ipynb`: le quattro politiche accettano un sovraccarico di raffreddamento `alpha` (`P_tot = P_IT * (1 + alpha)`); i risultati vanno in `cooling/risultati/`. Con `alpha = 0` si ritrovano i valori originali.
+- `eventi.py`: profili di soglia variabile nel tempo (costante, evento singolo, ricorrente, stocastico).
+- `sim_soglia_dinamica.py`: politica All con limite operativo variabile e metriche di violazione.
+- `sim_isteresi.py`: politica All con isteresi, tempi minimi di funzionamento/arresto e potenza minima del generatore.
+- `sim_soglie_scalate.py`: separa l'effetto del maggiore consumo da quello della soglia invariata.
+- `figura_architettura.py`, `figure_cooling.py`, `figure_soglia.py`: figure della tesi (in `figure/`).
+
+Gli script vanno eseguiti dalla radice del repository, ad esempio `python3 sim_isteresi.py`; i CSV vengono scritti in `risultati/`.

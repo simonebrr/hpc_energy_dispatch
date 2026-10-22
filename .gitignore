@@ -4,3 +4,9 @@ outputRL/plots/*
 outputRL_Co2only/plots/*
 *.parquet
 *.mat
+__pycache__/
+*.pyc
+*.log
+.venv/
+.ipynb_checkpoints/
+_backup_originali/
